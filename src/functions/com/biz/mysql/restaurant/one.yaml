@@ -1,0 +1,11 @@
+summary: Fetch Restaurant
+tasks:
+  - id: mysql_restaurant_one
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data:
+        where:
+          id: <% parseInt(inputs.params.id) %>
+      config:
+        method: Restaurant.findUnique

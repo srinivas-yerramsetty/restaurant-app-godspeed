@@ -1,0 +1,11 @@
+summary: Fetch Owner
+tasks:
+  - id: mysql_owner_one
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data:
+        where:
+          id: <% parseInt(inputs.params.id) %>
+      config:
+        method: Owner.findUnique

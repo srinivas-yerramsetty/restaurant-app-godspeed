@@ -1,0 +1,10 @@
+summary: Create Post
+tasks:
+  - id: mysql_post_create
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data:
+        data: <% inputs.body %>
+      config:
+        method: Post.create

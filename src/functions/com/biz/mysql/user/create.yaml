@@ -1,0 +1,10 @@
+summary: Create User
+tasks:
+  - id: mysql_user_create
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data:
+        data: <% inputs.body %>
+      config:
+        method: User.create

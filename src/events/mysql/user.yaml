@@ -1,0 +1,88 @@
+# ONE
+/mysql/user/:id.http.get:
+  summary: Fetch User
+  description: Fetch User from database
+  fn: com.biz.mysql.user.one
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# CREATE
+/mysql/user.http.post:
+  summary: Create a new User
+  description: Create User from database
+  fn: com.biz.mysql.user.create
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/User'
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# UPDATE
+/mysql/user/:id.http.put:
+  summary: Update a User
+  description: Update User from database
+  fn: com.biz.mysql.user.update
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/User'
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# DELETE
+/mysql/user/:id.http.delete:
+  summary: Delete a User
+  description: Delete User from database
+  fn: com.biz.mysql.user.delete
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# SEARCH
+/mysql/user/search.http.post:
+  summary: Fetch multiple User
+  description: Fetch multiple User from database
+  fn: com.biz.mysql.user.search
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+  responses:
+    content:
+      application/json:
+        schema:
+          type: array
+

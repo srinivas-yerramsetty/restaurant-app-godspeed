@@ -1,0 +1,9 @@
+summary: Fetch many Restaurant
+tasks:
+  - id: mysql_restaurant_search
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data: <% inputs.body %>
+      config:
+        method: Restaurant.findMany

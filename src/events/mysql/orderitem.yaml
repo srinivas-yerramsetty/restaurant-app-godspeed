@@ -1,0 +1,88 @@
+# ONE
+/mysql/orderitem/:id.http.get:
+  summary: Fetch OrderItem
+  description: Fetch OrderItem from database
+  fn: com.biz.mysql.orderitem.one
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# CREATE
+/mysql/orderitem.http.post:
+  summary: Create a new OrderItem
+  description: Create OrderItem from database
+  fn: com.biz.mysql.orderitem.create
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/OrderItem'
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# UPDATE
+/mysql/orderitem/:id.http.put:
+  summary: Update a OrderItem
+  description: Update OrderItem from database
+  fn: com.biz.mysql.orderitem.update
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/OrderItem'
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# DELETE
+/mysql/orderitem/:id.http.delete:
+  summary: Delete a OrderItem
+  description: Delete OrderItem from database
+  fn: com.biz.mysql.orderitem.delete
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# SEARCH
+/mysql/orderitem/search.http.post:
+  summary: Fetch multiple OrderItem
+  description: Fetch multiple OrderItem from database
+  fn: com.biz.mysql.orderitem.search
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+  responses:
+    content:
+      application/json:
+        schema:
+          type: array
+

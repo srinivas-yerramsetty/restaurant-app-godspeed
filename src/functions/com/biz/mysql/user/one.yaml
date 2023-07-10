@@ -1,0 +1,11 @@
+summary: Fetch User
+tasks:
+  - id: mysql_user_one
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data:
+        where:
+          id: <% parseInt(inputs.params.id) %>
+      config:
+        method: User.findUnique

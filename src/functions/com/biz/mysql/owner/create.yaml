@@ -1,0 +1,10 @@
+summary: Create Owner
+tasks:
+  - id: mysql_owner_create
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data:
+        data: <% inputs.body %>
+      config:
+        method: Owner.create

@@ -1,0 +1,368 @@
+openapi: 3.0.0
+info:
+  version: 0.0.1
+  title: "Godspeed: Sample Microservice"
+  description: Sample API calls demonstrating the functionality of Godspeed framework
+  termsOfService: http://swagger.io/terms/
+  contact:
+    name: Mindgrep Technologies Pvt Ltd
+    email: talktous@mindgrep.com
+    url: https://docs.mindgrep.com/docs/microservices/intro
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+  - url: http://localhost:3000
+paths:
+  "/mysql/category/{id}":
+    get:
+      summary: Fetch Category
+      description: Fetch Category from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    put:
+      summary: Update a Category
+      description: Update Category from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/Category"
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    delete:
+      summary: Delete a Category
+      description: Delete Category from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/category:
+    post:
+      summary: Create a new Category
+      description: Create Category from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/Category"
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/category/search:
+    post:
+      summary: Fetch multiple Category
+      description: Fetch multiple Category from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        content:
+          application/json:
+            schema:
+              type: array
+  "/mysql/post/{id}":
+    get:
+      summary: Fetch Post
+      description: Fetch Post from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    put:
+      summary: Update a Post
+      description: Update Post from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/Post"
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    delete:
+      summary: Delete a Post
+      description: Delete Post from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/post:
+    post:
+      summary: Create a new Post
+      description: Create Post from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/Post"
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/post/search:
+    post:
+      summary: Fetch multiple Post
+      description: Fetch multiple Post from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        content:
+          application/json:
+            schema:
+              type: array
+  "/mysql/profile/{id}":
+    get:
+      summary: Fetch Profile
+      description: Fetch Profile from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    put:
+      summary: Update a Profile
+      description: Update Profile from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/Profile"
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    delete:
+      summary: Delete a Profile
+      description: Delete Profile from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/profile:
+    post:
+      summary: Create a new Profile
+      description: Create Profile from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/Profile"
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/profile/search:
+    post:
+      summary: Fetch multiple Profile
+      description: Fetch multiple Profile from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        content:
+          application/json:
+            schema:
+              type: array
+  "/mysql/user/{id}":
+    get:
+      summary: Fetch User
+      description: Fetch User from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    put:
+      summary: Update a User
+      description: Update User from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/User"
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+    delete:
+      summary: Delete a User
+      description: Delete User from database
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/user:
+    post:
+      summary: Create a new User
+      description: Create User from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/definitions/mysql/User"
+      responses:
+        content:
+          application/json:
+            schema:
+              type: object
+  /mysql/user/search:
+    post:
+      summary: Fetch multiple User
+      description: Fetch multiple User from database
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        content:
+          application/json:
+            schema:
+              type: array
+definitions:
+  mysql:
+    User:
+      type: object
+      properties:
+        email:
+          type: string
+        name:
+          type: string
+          nullable: true
+        role:
+          type: string
+          default: USER
+          enum:
+            - USER
+            - ADMIN
+    Profile:
+      type: object
+      properties:
+        bio:
+          type: string
+        userId:
+          type: integer
+    Post:
+      type: object
+      properties:
+        createdAt:
+          type: string
+          format: date-time
+        title:
+          type: string
+        published:
+          type: boolean
+          default: false
+        authorId:
+          type: integer
+        slug:
+          type: string
+        body:
+          type: string
+        description:
+          type: string
+          nullable: true
+    Category:
+      type: object
+      properties:
+        name:
+          type: string

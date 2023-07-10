@@ -1,0 +1,1677 @@
+{
+    "item": [
+        {
+            "id": "1afccf6b-3368-421d-bd32-4f4f2979dd18",
+            "name": "Fetch Category",
+            "request": {
+                "name": "Fetch Category",
+                "description": {
+                    "content": "Fetch Category from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "category",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "f9641fea-5a19-4175-bbde-20871fcd67d0",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "category",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "99c4eb9a-ad70-4c9e-b598-d1ec418b1405",
+            "name": "Update a Category",
+            "request": {
+                "name": "Update a Category",
+                "description": {
+                    "content": "Update Category from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "category",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "PUT",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/Category not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "9d41c560-f6da-43bc-aa60-f7c879130f48",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "category",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/Category not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "7f8b68a0-3fcc-494f-920e-aed002d3d654",
+            "name": "Delete a Category",
+            "request": {
+                "name": "Delete a Category",
+                "description": {
+                    "content": "Delete Category from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "category",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "DELETE",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "eabb628b-8f45-446f-b0f2-0cf58b6fca05",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "category",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "455d2551-48b3-462e-948f-af7fff3a32dc",
+            "name": "Create a new Category",
+            "request": {
+                "name": "Create a new Category",
+                "description": {
+                    "content": "Create Category from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "category"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/Category not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "cbdf34ff-ff60-4194-8fe6-8449457b6c8d",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "category"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/Category not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "244df8d6-7ca4-4c90-bb65-99a799ccad4f",
+            "name": "Fetch multiple Category",
+            "request": {
+                "name": "Fetch multiple Category",
+                "description": {
+                    "content": "Fetch multiple Category from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "category",
+                        "search"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "\"<object>\"",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "f79a121c-9073-4d92-a71b-c920651f59fc",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "category",
+                                "search"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "\"<object>\"",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "327fd2e6-e984-479f-8985-e055fe7bf0ea",
+            "name": "Fetch Post",
+            "request": {
+                "name": "Fetch Post",
+                "description": {
+                    "content": "Fetch Post from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "post",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "99af2605-51a9-4f2f-8201-1c949054ec6b",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "post",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "3b19bdcf-3f0d-4671-bb88-80576fd1db21",
+            "name": "Update a Post",
+            "request": {
+                "name": "Update a Post",
+                "description": {
+                    "content": "Update Post from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "post",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "PUT",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/Post not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "7c19d64d-e8a4-4384-92c9-a493d230d7bb",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "post",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/Post not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "0def4550-6dec-4691-85e9-b99d3688cfb6",
+            "name": "Delete a Post",
+            "request": {
+                "name": "Delete a Post",
+                "description": {
+                    "content": "Delete Post from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "post",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "DELETE",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "a5a32754-76e5-4056-bdac-1b8309c7dd96",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "post",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "5f51972d-e379-4400-8c34-228ba49b1f66",
+            "name": "Create a new Post",
+            "request": {
+                "name": "Create a new Post",
+                "description": {
+                    "content": "Create Post from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "post"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/Post not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "19641c97-b8b8-4c8a-b2fd-1f63fb7ddefb",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "post"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/Post not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "be7da199-2f1a-43dd-848e-5abf59e3d731",
+            "name": "Fetch multiple Post",
+            "request": {
+                "name": "Fetch multiple Post",
+                "description": {
+                    "content": "Fetch multiple Post from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "post",
+                        "search"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "\"<object>\"",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "07c6e8e6-3f7b-409a-bd72-96dec20d3930",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "post",
+                                "search"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "\"<object>\"",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "d1ee096c-82e7-4fb2-aa04-5e899a3637f7",
+            "name": "Fetch Profile",
+            "request": {
+                "name": "Fetch Profile",
+                "description": {
+                    "content": "Fetch Profile from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "profile",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "e9583082-b5c5-4d16-b938-2c9aa40af456",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "profile",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "994619fe-06b6-47d0-b4f6-cfcc3fb3117e",
+            "name": "Update a Profile",
+            "request": {
+                "name": "Update a Profile",
+                "description": {
+                    "content": "Update Profile from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "profile",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "PUT",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/Profile not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "3347b253-fdc4-4c0b-85cf-191d42387416",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "profile",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/Profile not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "f90668df-d5c5-42d3-981f-59a83dad49c5",
+            "name": "Delete a Profile",
+            "request": {
+                "name": "Delete a Profile",
+                "description": {
+                    "content": "Delete Profile from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "profile",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "DELETE",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "45c0dd1b-a6b3-426f-801c-5898bd5c2e10",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "profile",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "f97beba7-efde-4a93-98be-e6cddb0f3dd7",
+            "name": "Create a new Profile",
+            "request": {
+                "name": "Create a new Profile",
+                "description": {
+                    "content": "Create Profile from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "profile"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/Profile not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "3d07921b-7a65-4e83-a5c8-13fd379d49f7",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "profile"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/Profile not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "945585d2-17f8-47c2-98c1-18d48f452884",
+            "name": "Fetch multiple Profile",
+            "request": {
+                "name": "Fetch multiple Profile",
+                "description": {
+                    "content": "Fetch multiple Profile from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "profile",
+                        "search"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "\"<object>\"",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "779c036c-21cc-4da5-93fc-49ef60204e81",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "profile",
+                                "search"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "\"<object>\"",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "a175f415-a1f9-4a77-b721-04d0e889642b",
+            "name": "Fetch User",
+            "request": {
+                "name": "Fetch User",
+                "description": {
+                    "content": "Fetch User from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "user",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "a754b79c-bb3d-4502-85ae-90d6b66fc496",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "user",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "7996df22-31cf-4a57-8edb-36c1428cec07",
+            "name": "Update a User",
+            "request": {
+                "name": "Update a User",
+                "description": {
+                    "content": "Update User from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "user",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "PUT",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/User not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "13fc6e1e-5695-4ab3-a2c7-d6314af44aad",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "user",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/User not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "029ab617-40bc-4c85-9c9c-e091f029420e",
+            "name": "Delete a User",
+            "request": {
+                "name": "Delete a User",
+                "description": {
+                    "content": "Delete User from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "user",
+                        ":id"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": [
+                        {
+                            "disabled": false,
+                            "type": "any",
+                            "value": "<string>",
+                            "key": "id",
+                            "description": "(Required) "
+                        }
+                    ]
+                },
+                "method": "DELETE",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "e4a4ef8e-31f9-4e63-8289-239a7ac180d3",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "user",
+                                ":id"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "id",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "body": {}
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "7cdf6f5a-f79d-4a61-b08a-a63c7a48105c",
+            "name": "Create a new User",
+            "request": {
+                "name": "Create a new User",
+                "description": {
+                    "content": "Create User from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "user"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "{\n  \"value\": \"reference #/definitions/mysql/User not found in the OpenAPI spec\"\n}",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "bf06bf8e-138c-4b70-976a-02173ac78b7d",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "user"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n  \"value\": \"reference #/definitions/mysql/User not found in the OpenAPI spec\"\n}",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        },
+        {
+            "id": "06954274-9af4-48fc-bfa2-b9b13ff10315",
+            "name": "Fetch multiple User",
+            "request": {
+                "name": "Fetch multiple User",
+                "description": {
+                    "content": "Fetch multiple User from database",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        "mysql",
+                        "user",
+                        "search"
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "method": "POST",
+                "auth": null,
+                "body": {
+                    "mode": "raw",
+                    "raw": "\"<object>\"",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                }
+            },
+            "response": [
+                {
+                    "id": "773a3f04-de92-45b5-94c7-7e79d2e60fb5",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                "mysql",
+                                "user",
+                                "search"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "\"<object>\"",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            }
+                        }
+                    },
+                    "status": "Internal Server Error",
+                    "code": 500,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": [],
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            }
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "type": "string",
+            "value": "http://localhost:3000",
+            "key": "baseUrl"
+        }
+    ],
+    "info": {
+        "_postman_id": "a5de2542-e4aa-49c4-af1c-a1c1b82605e2",
+        "name": "Godspeed: Sample Microservice",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "Sample API calls demonstrating the functionality of Godspeed framework\n\nContact Support:\n Name: Mindgrep Technologies Pvt Ltd\n Email: talktous@mindgrep.com",
+            "type": "text/plain"
+        }
+    }
+}

@@ -1,0 +1,88 @@
+# ONE
+/mysql/category/:id.http.get:
+  summary: Fetch Category
+  description: Fetch Category from database
+  fn: com.biz.mysql.category.one
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# CREATE
+/mysql/category.http.post:
+  summary: Create a new Category
+  description: Create Category from database
+  fn: com.biz.mysql.category.create
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/Category'
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# UPDATE
+/mysql/category/:id.http.put:
+  summary: Update a Category
+  description: Update Category from database
+  fn: com.biz.mysql.category.update
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/Category'
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# DELETE
+/mysql/category/:id.http.delete:
+  summary: Delete a Category
+  description: Delete Category from database
+  fn: com.biz.mysql.category.delete
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# SEARCH
+/mysql/category/search.http.post:
+  summary: Fetch multiple Category
+  description: Fetch multiple Category from database
+  fn: com.biz.mysql.category.search
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+  responses:
+    content:
+      application/json:
+        schema:
+          type: array
+

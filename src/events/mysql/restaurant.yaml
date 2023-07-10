@@ -1,0 +1,88 @@
+# ONE
+/mysql/restaurant/:id.http.get:
+  summary: Fetch Restaurant
+  description: Fetch Restaurant from database
+  fn: com.biz.mysql.restaurant.one
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# CREATE
+/mysql/restaurant.http.post:
+  summary: Create a new Restaurant
+  description: Create Restaurant from database
+  fn: com.biz.mysql.restaurant.create
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/Restaurant'
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# UPDATE
+/mysql/restaurant/:id.http.put:
+  summary: Update a Restaurant
+  description: Update Restaurant from database
+  fn: com.biz.mysql.restaurant.update
+  body:
+    content:
+      application/json:
+        schema:
+          $ref: '#/definitions/mysql/Restaurant'
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# DELETE
+/mysql/restaurant/:id.http.delete:
+  summary: Delete a Restaurant
+  description: Delete Restaurant from database
+  fn: com.biz.mysql.restaurant.delete
+  params:
+    - name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    content:
+      application/json:
+        schema:
+          type: object
+
+# SEARCH
+/mysql/restaurant/search.http.post:
+  summary: Fetch multiple Restaurant
+  description: Fetch multiple Restaurant from database
+  fn: com.biz.mysql.restaurant.search
+  body:
+    content:
+      application/json:
+        schema:
+          type: object
+  responses:
+    content:
+      application/json:
+        schema:
+          type: array
+

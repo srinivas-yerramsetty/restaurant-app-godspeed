@@ -1,0 +1,9 @@
+summary: Fetch many User
+tasks:
+  - id: mysql_user_search
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data: <% inputs.body %>
+      config:
+        method: User.findMany

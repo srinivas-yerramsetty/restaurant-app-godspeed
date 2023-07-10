@@ -1,0 +1,9 @@
+summary: Fetch many Post
+tasks:
+  - id: mysql_post_search
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data: <% inputs.body %>
+      config:
+        method: Post.findMany

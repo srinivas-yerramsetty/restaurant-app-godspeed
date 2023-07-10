@@ -1,0 +1,9 @@
+summary: Fetch many MenuItems
+tasks:
+  - id: mysql_menuitems_search
+    fn: com.gs.datastore
+    args:
+      datasource: mysql
+      data: <% inputs.body %>
+      config:
+        method: MenuItems.findMany
